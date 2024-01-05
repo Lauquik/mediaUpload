@@ -4,11 +4,11 @@ services:
   nginx:
     build: .
     ports:
-      - "443:443"
+      - "8443:8443"
     depends_on:
       - my_app
 
   my_app:
-    image: media-upload:latest
+    image: laukik2002/media-go-upload:latest
     environment:
     - SOCIAL_SERVER_ADDRESS=${SOCIAL_SERVER_ADDRESS}

@@ -9,6 +9,6 @@ services:
       - my_app
 
   my_app:
-    build: ..
+    image: media-upload:latest
     environment:
     - SOCIAL_SERVER_ADDRESS=${SOCIAL_SERVER_ADDRESS}
